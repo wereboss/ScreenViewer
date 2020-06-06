@@ -1,0 +1,11 @@
+﻿Id,ScrName,Desc,Actions
+1,Screen1 ,Screen1  0.534637575870962 description,Next=2
+2,Screen2,Screen2 0.781652325021179 description,Next=3;Cancel=4
+3,Screen3,Screen3 0.155365363063261 description,Next=5
+4,Screen4,Screen4 0.485325233685028 description,Next=6
+5,Screen5,Screen5 0.615826291904762 description,Next=7
+6,Screen6,Screen6 0.851812911377328 description,
+7,Screen7,Screen7 0.0538562690469645 description,"Next=8,Error=9"
+8,Screen8,Screen8 0.915372915643283 description,Next=10
+9,Screen9,Screen9 0.113205595467749 description,
+10,Screen10,Screen10 0.108902506941254 description,
