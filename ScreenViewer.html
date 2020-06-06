@@ -30,32 +30,36 @@
     <script src="./utils/scrvw.js"></script>
 
     <div class="container">
-      <!-- Page Content goes here -->
       <div class="row">
         <div class="col s12 valign-wrapper">
-          <div class="col s2">
-            <i class="material-icons" style="font-size: 104px;"
+          <div class="col s2"><a href="#">
+            <i class="material-icons scrNavLeft" style="font-size: 104px;"
               >navigate_before</i
-            >
+            ></a>
           </div>
           <div class="col s8 center-align">
-            <h1 class="titill">Screen Viewer</h1>
+            <h1 class="titill">Screen Flow</h1>
+            <span class="scrFlowName"
+              >Flow Name Flow Name Flow Name Flow Name Flow Name Flow Name Flow
+              Name
+            </span>
           </div>
-          <div class="col s2">
-            <i class="material-icons" style="font-size: 104px;"
+          <div class="col s2"><a href="#">
+            <i class="material-icons scrNavRight" style="font-size: 104px;"
               >navigate_next</i
-            >
+            ></a>
           </div>
         </div>
       </div>
 
       <div class="row">
-        <div class="col s4">
+        <div class="col s4 cardcols">
           <img class="materialboxed z-depth-2" width="100%" src="temp.png" />
           <ul class="collapsible">
             <li>
               <div class="collapsible-header">
-                Screen Name
+                <span class="blue-text text-darken-2 scrID">[1]&nbsp;</span
+                ><span class="scrName">Screen Name</span>
               </div>
               <div class="collapsible-body">
                 <span class="blue-text text-darken-4"
@@ -67,7 +71,7 @@
           <div>
             <!-- Dropdown Trigger -->
             <a
-              class="dropdown-trigger btn blue-grey lighten-5 blue-text text-darken-2"
+              class="dropdown-trigger btn blue-grey lighten-5 blue-text text-darken-2 scrActClick"
               href="#"
               data-target="dropdown1"
               style="width: 100%;"
@@ -75,50 +79,34 @@
             >
 
             <!-- Dropdown Structure -->
-            <ul id="dropdown1" class="dropdown-content blue-grey lighten-5">
-              <li>
-                <a href="#!">
-                  <span class="col s10 blue-text text-darken-2">
+            <ul
+              id="dropdown1"
+              class="dropdown-content blue-grey lighten-5 scrActions"
+            >
+              <!-- <li>
+                <a class="scrActClick" href="#!" >
+                  <span class="col s10 blue-text text-darken-2 scrActName">
                     [Action 1] Screen Name
                   </span>
                   <span class="col s2 blue-text text-darken-2"
                     ><i class="material-icons">double_arrow</i></span
                   >
                 </a>
-              </li>
-              <li>
-                <a href="#!">
-                  <span class="col s10 blue-text text-darken-2">
-                    [Action 2] Screen Name
-                  </span>
-                  <span class="col s2 blue-text text-darken-2"
-                    ><i class="material-icons">double_arrow</i></span
-                  >
-                </a>
-              </li>
-              <li>
-                <a href="#!">
-                  <span class="col s10 blue-text text-darken-2">
-                    [Action 3] Screen Name
-                  </span>
-                  <span class="col s2 blue-text text-darken-2"
-                    ><i class="material-icons">double_arrow</i></span
-                  >
-                </a>
-              </li>
+              </li> -->
             </ul>
           </div>
         </div>
 
-        <div class="col s4">
+        <div class="col s4 cardcols">
           <img class="materialboxed z-depth-2" width="100%" src="temp.png" />
           <ul class="collapsible">
             <li>
               <div class="collapsible-header">
-                Screen Name
+                <span class="blue-text text-darken-2 scrID">[2]&nbsp;</span
+                ><span class="scrName">Screen Name</span>
               </div>
               <div class="collapsible-body">
-                <span class="blue-text text-darken-4"
+                <span class="blue-text text-darken-4 scrDesc"
                   >Screen Description lorem ipsum</span
                 >
               </div>
@@ -127,61 +115,44 @@
           <div>
             <!-- Dropdown Trigger -->
             <a
-              class="dropdown-trigger btn blue lighten-5 blue-text text-darken-2"
+              class="dropdown-trigger btn blue-grey lighten-5 blue-text text-darken-2 scrActClick"
               href="#"
-              data-target="dropdown1"
+              data-target="dropdown2"
               style="width: 100%;"
               >Actions</a
             >
 
             <!-- Dropdown Structure -->
-            <ul id="dropdown1" class="dropdown-content blue lighten-5">
-              <li>
-                <a href="#!">
-                  <span class="col s10 blue-text text-darken-2">
-                    [Action 1] Screen Name
-                  </span>
-                  <span class="col s2 blue-text text-darken-2"
-                    ><i class="material-icons">double_arrow</i></span
-                  >
-                </a>
-              </li>
-              <li>
-                <a href="#!">
-                  <span class="col s10 blue-text text-darken-2">
-                    [Action 2] Screen Name
-                  </span>
-                  <span class="col s2 blue-text text-darken-2"
-                    ><i class="material-icons">double_arrow</i></span
-                  >
-                </a>
-              </li>
-              <li>
-                <a href="#!">
-                  <span class="col s10 blue-text text-darken-2">
-                    [Action 3] Screen Name
-                  </span>
-                  <span class="col s2 blue-text text-darken-2"
-                    ><i class="material-icons">double_arrow</i></span
-                  >
-                </a>
-              </li>
+            <ul
+              id="dropdown2"
+              class="dropdown-content blue-grey lighten-5 scrActions"
+            >
+              <!-- <li>
+    <a class="scrActClick" href="#!" >
+      <span class="col s10 blue-text text-darken-2 scrActName">
+        [Action 1] Screen Name
+      </span>
+      <span class="col s2 blue-text text-darken-2"
+        ><i class="material-icons">double_arrow</i></span
+      >
+    </a>
+  </li> -->
             </ul>
           </div>
         </div>
 
-        <div class="col s4">
+        <div class="col s4 cardcols">
           <img
             class="materialboxed z-depth-2"
             width="100%"
-            src="number-nine-flower-numbers-complete-to-52516511.jpg"
+            src="temp.png"
             data-caption="Screen Description lorem ipsum"
           />
           <ul class="collapsible">
             <li>
               <div class="collapsible-header">
-                <span class="blue-text text-darken-2">[3]&nbsp;</span
-                ><span>Screen Name</span>
+                <span class="blue-text text-darken-2 scrID">[3]&nbsp;</span
+                ><span class="scrName">Screen Name</span>
               </div>
               <div class="collapsible-body">
                 <span class="blue-text text-darken-4"
@@ -193,45 +164,28 @@
           <div>
             <!-- Dropdown Trigger -->
             <a
-              class="dropdown-trigger btn blue lighten-5 blue-text text-darken-2"
+              class="dropdown-trigger btn blue-grey lighten-5 blue-text text-darken-2 scrActClick"
               href="#"
-              data-target="dropdown1"
+              data-target="dropdown3"
               style="width: 100%;"
               >Actions</a
             >
 
             <!-- Dropdown Structure -->
-            <ul id="dropdown1" class="dropdown-content blue lighten-5">
-              <li>
-                <a href="#!">
-                  <span class="col s10 blue-text text-darken-2">
-                    [Action 1] Screen Name
-                  </span>
-                  <span class="col s2 blue-text text-darken-2"
-                    ><i class="material-icons">double_arrow</i></span
-                  >
-                </a>
-              </li>
-              <li>
-                <a href="#!">
-                  <span class="col s10 blue-text text-darken-2">
-                    [Action 2] Screen Name
-                  </span>
-                  <span class="col s2 blue-text text-darken-2"
-                    ><i class="material-icons">double_arrow</i></span
-                  >
-                </a>
-              </li>
-              <li>
-                <a href="#!">
-                  <span class="col s10 blue-text text-darken-2">
-                    [Action 3] Screen Name
-                  </span>
-                  <span class="col s2 blue-text text-darken-2"
-                    ><i class="material-icons">double_arrow</i></span
-                  >
-                </a>
-              </li>
+            <ul
+              id="dropdown3"
+              class="dropdown-content blue-grey lighten-5 scrActions"
+            >
+              <!-- <li>
+              <a class="scrActClick" href="#!" >
+                <span class="col s10 blue-text text-darken-2 scrActName">
+                  [Action 1] Screen Name
+                </span>
+                <span class="col s2 blue-text text-darken-2"
+                  ><i class="material-icons">double_arrow</i></span
+                >
+              </a>
+            </li> -->
             </ul>
           </div>
         </div>

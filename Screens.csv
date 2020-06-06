@@ -1,11 +1,11 @@
-﻿Id,ScrName,Desc,Actions
-1,Screen1 ,Screen1  0.534637575870962 description,Next=2
-2,Screen2,Screen2 0.781652325021179 description,Next=3;Cancel=4
-3,Screen3,Screen3 0.155365363063261 description,Next=5
-4,Screen4,Screen4 0.485325233685028 description,Next=6
-5,Screen5,Screen5 0.615826291904762 description,Next=7
-6,Screen6,Screen6 0.851812911377328 description,
-7,Screen7,Screen7 0.0538562690469645 description,"Next=8,Error=9"
-8,Screen8,Screen8 0.915372915643283 description,Next=10
-9,Screen9,Screen9 0.113205595467749 description,
-10,Screen10,Screen10 0.108902506941254 description,
+﻿Id,ScrName,Img,Desc,Actions
+1,Screen1 ,./Screens/1-Number-PNG-180x180.png,Screen1  0.323566067585661 description,Next=2
+2,Screen2,./Screens/2-Number-PNG-180x180.png,Screen2 0.493812345820098 description,Next=3;Cancel=4
+3,Screen3,./Screens/3-Number-PNG-180x180.png,Screen3 0.796769554383902 description,Next=5
+4,Screen4,./Screens/4-Number-PNG-180x180.png,Screen4 0.707583826889361 description,Next=6
+5,Screen5,./Screens/5-Number-PNG-180x180.png,Screen5 0.00598549292945039 description,Next=7
+6,Screen6,./Screens/6-Number-PNG-180x180.png,Screen6 0.410446535959446 description,
+7,Screen7,./Screens/7-Number-PNG-180x180.png,Screen7 0.515878758101936 description,Next=8;Error=9
+8,Screen8,./Screens/8-Number-PNG-180x180.png,Screen8 0.563693199631555 description,Next=10
+9,Screen9,./Screens/9-Number-PNG-180x180.png,Screen9 0.232626220841375 description,
+10,Screen10,./Screens/0-Number-PNG-180x180.png,Screen10 0.710869829068447 description,
