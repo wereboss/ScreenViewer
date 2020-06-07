@@ -227,12 +227,16 @@ $(function () {
     if (scrLeft > 0) {
       scrLeft--;
       repaintScreen();
+    } else {
+        M.toast({html: 'Starting Step. None prior !'})
     }
   });
   $(".scrNavRight").click(function () {
     if (scrLeft < pathList.length - 3) {
       scrLeft++;
       repaintScreen();
+    } else {
+        M.toast({html: 'Last Step. None after !'})
     }
   });
   //====== Load Data
