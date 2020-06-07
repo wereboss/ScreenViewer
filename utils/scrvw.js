@@ -1,5 +1,6 @@
 // Global Vars ========================
-var csvURL = "Screens.csv"
+var csvURL = "Screens.csv";
+var flowName = "Sample Flow";
 var scrJSONArr = [];
 var indexList = []; // list of indices for ScreenList
 var pathList = []; // Path of indexList indices
@@ -238,6 +239,9 @@ $(function () {
     } else {
         M.toast({html: 'Last Step. None after !'})
     }
+  });
+  $(".scrFlowName").each(function(){
+      $(this).text(flowName);
   });
   //====== Load Data
   $.ajax({
