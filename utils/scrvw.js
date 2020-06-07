@@ -1,4 +1,5 @@
 // Global Vars ========================
+var csvURL = "Screens.csv"
 var scrJSONArr = [];
 var indexList = []; // list of indices for ScreenList
 var pathList = []; // Path of indexList indices
@@ -105,6 +106,7 @@ function repaintScreen() {
       scrObj = scrJSONArr[indexList[pathList[startP]].aID];
       // Image
       $(this).find("img.materialboxed").first().attr("src", scrObj.Img);
+      $(this).find("img.materialboxed").first().attr("data-caption","[" + scrObj.Id + "] ." + scrObj.ScrName + " :-: " + scrObj.Desc);
       // Screen ID
       $(this)
         .find("span.scrID")
@@ -163,6 +165,7 @@ function repaintScreen() {
     } else {
       // Image
       $(this).find("img.materialboxed").first().attr("src", "temp.png");
+      $(this).find("img.materialboxed").first().attr("data-caption", "");
       // Screen ID
       $(this).find("span.scrID").first().text("[ ]");
       // Screen Name
@@ -235,7 +238,7 @@ $(function () {
   //====== Load Data
   $.ajax({
     type: "GET",
-    url: "Screens.csv",
+    url: csvURL,
     dataType: "text",
     success: function (data) {
       jdata = csvJSON(data);
