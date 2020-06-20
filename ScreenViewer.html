@@ -4,6 +4,11 @@
     <title>Screen Viewer</title>
   </head>
   <body>
+    <script>
+      var csvURL = "Screens.csv";
+      var flowName = "Sample Flow";
+    </script>
+
     <!-- Web Fonts -->
     <link
       rel="stylesheet"
@@ -28,14 +33,15 @@
     <!-- Own scripts -->
     <link rel="stylesheet" href="./utils/scrvw.css" />
     <script src="./utils/scrvw.js"></script>
-
     <div class="container scrContainer">
       <div class="row">
         <div class="col s12 valign-wrapper">
-          <div class="col s2"><a href="#">
-            <i class="material-icons scrNavLeft" style="font-size: 104px;"
-              >navigate_before</i
-            ></a>
+          <div class="col s2">
+            <a href="#">
+              <i class="material-icons scrNavLeft" style="font-size: 104px;"
+                >navigate_before</i
+              ></a
+            >
           </div>
           <div class="col s8 center-align">
             <h2>Screen Flow</h2>
@@ -44,10 +50,12 @@
               Name
             </span>
           </div>
-          <div class="col s2"><a href="#">
-            <i class="material-icons scrNavRight" style="font-size: 104px;"
-              >navigate_next</i
-            ></a>
+          <div class="col s2">
+            <a href="#">
+              <i class="material-icons scrNavRight" style="font-size: 104px;"
+                >navigate_next</i
+              ></a
+            >
           </div>
         </div>
       </div>

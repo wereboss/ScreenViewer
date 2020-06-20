@@ -1,6 +1,5 @@
 // Global Vars ========================
-var csvURL = "Screens.csv";
-var flowName = "Sample Flow";
+
 var scrJSONArr = [];
 var indexList = []; // list of indices for ScreenList
 var pathList = []; // Path of indexList indices
